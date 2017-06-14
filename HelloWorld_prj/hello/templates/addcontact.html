@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="POST">
+    <input type="hidden" value="{{ csrf_token }}" name="csrfmiddlewaretoken">
+
+    <fieldset>
+    <p><label for="first_name">First Name</label>
+    <input id="first_name" type="text" name="first_name"/></p>
+
+    <p><label for="first_name">Last Name</label>
+    <input id="last_name" type="text" name="last_name"/></p>
+
+    <p><label for="mobile">Mobile</label>
+    <input id="mobile" type="text" name="mobile"/></p>
+
+    <p><label for="email">Email</label>
+    <input id="email" type="text" name="email"/></p>
+
+    <input type="submit"/>
+    </fieldset>
+</form>
+
+
+{% endblock content %}
